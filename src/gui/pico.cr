@@ -2669,7 +2669,15 @@ def picoCSS
   
   /*# sourceMappingURL=pico.css.map */
 
-    /* Tooltip container */
+
+
+  /*
+    ====================
+    Addition to pico.css:
+    ====================
+  */
+
+  /* Tooltip container */
   .tooltip {
     position: relative;
     display: inline-block;

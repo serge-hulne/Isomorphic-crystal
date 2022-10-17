@@ -6,13 +6,12 @@ require "webview"
 # Settings
 # ============
 
-# Net params
+# App params
 IP = "127.0.0.1"
 PORT = 3000
-
-# App Size 
 WIDTH = 800
 HEIGHT = 600
+TITLE = "My new app"
 
 
 # ======
@@ -51,6 +50,9 @@ end
 # Client
 # ========
 
-wv = Webview.window(WIDTH, HEIGHT, Webview::SizeHints::NONE, "App 2", "http://#{IP}:#{PORT}/root")
+wv = Webview.window(WIDTH, HEIGHT, Webview::SizeHints::NONE, 
+"#{TITLE}", 
+"http://#{IP}:#{PORT}/root")
+
 wv.run
 wv.destroy
