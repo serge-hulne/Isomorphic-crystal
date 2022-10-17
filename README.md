@@ -15,9 +15,6 @@ The aim is to provide a portable GUI library which will allows developers to cod
 - Another goal is to make it easy to distribute : The only dependency is Webview for Crystal.
 - The library uses Crystal, HTML, CSS and Webmin, but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
   
-
-https://github.com/serge-hulne/Isomorphic-crystal
-
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
 ```
