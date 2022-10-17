@@ -8,7 +8,42 @@ TODO: Write installation instructions here
 
 ## Usage
 
-TODO: Write usage instructions here
+The aim is to provide a portable GUI library which will allows developers to code desktop apps in Crystal.
+
+- One goal is to make it as easy to use as Tkinter for Python.
+- Another goal is portability across platforms (Linux, Mac, Windows)
+- Another goal is to make it easy to distribute : The only dependency is Webview for Crystal.
+- The library uses Crystal, HTML, CSS and Webmin, but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
+  
+
+https://github.com/serge-hulne/Isomorphic-crystal
+
+GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
+
+```
+# ===========================
+# Pages (Structure/interface)
+# ===========================
+
+def root_frame
+    interface = Gui::Frame.new(title:"My new app")
+    interface.append(Div.new("This is a est"))
+    
+    entries = [
+        FormEntry.new("First Name", "fname"),
+        FormEntry.new("Last Name", "lname"),
+    ]
+
+    action = FormAction.new("Get Name", "get_name")
+
+    form = Form.new(entries, action)
+
+    interface.append(form)
+    hint = Hint.new("This is a hint")
+    interface.append(hint)
+    interface.render
+end
+```
 
 ## Development
 
