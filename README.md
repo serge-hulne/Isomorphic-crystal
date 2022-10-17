@@ -12,7 +12,7 @@ The aim is to provide a portable GUI library which will allows developers to cod
 
 - One goal is to make it as easy to use as Tkinter for Python.
 - Another goal is portability across platforms (Linux, Mac, Windows)
-- Another goal is to make it easy to distribute : The only dependency is Webview for Crystal. The app is simply one (digital executable) file.
+- Another goal is to make it easy to distribute : The only dependency is Webview for Crystal. The app is simply one (binary executable) file.
 - The library uses Crystal, HTML, CSS and Webmin, but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
   
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
