@@ -1,0 +1,19 @@
+name: gui
+version: 0.1.0
+
+authors:
+  - serge <serge.hulne@gmail.com>
+
+targets:
+  gui_1:
+    main: src/gui.cr
+
+crystal: 1.6.0
+
+license: MIT
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  webview:
+    github: naqvis/webview
