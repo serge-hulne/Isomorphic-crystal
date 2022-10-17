@@ -17,7 +17,7 @@ The aim is to provide a portable GUI library which will allows developers to cod
   
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
-<img width="815" alt="Capture d’écran 2022-10-17 à 12 54 43" src="https://user-images.githubusercontent.com/303502/196160093-a05fa6b0-3392-4a63-a4d6-ac8d520c7310.png">
+<img width="813" alt="Capture d’écran 2022-10-17 à 13 07 29" src="https://user-images.githubusercontent.com/303502/196162280-cf8f01bb-aea5-4265-8483-50e64bd936e4.png">
 
 ```
 # ===========================
