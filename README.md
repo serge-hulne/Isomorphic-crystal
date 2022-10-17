@@ -1,4 +1,4 @@
-# Isomophic
+# Isomophic Crystal GUI
 
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
