@@ -1,6 +1,6 @@
 # Isomophic
 
-TODO: Write a description here
+GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
 ## Installation
 
