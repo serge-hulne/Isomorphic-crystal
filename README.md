@@ -26,7 +26,7 @@ GUI lib for Crystal-lang allowing for developing simple desktop apps using Cryst
 
 def root_frame
     interface = Gui::Frame.new(title:"My new app")
-    interface.append(Div.new("This is a est"))
+    interface.append(Div.new("This is a test"))
     
     entries = [
         FormEntry.new("First Name", "fname"),
