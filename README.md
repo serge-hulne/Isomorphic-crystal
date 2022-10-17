@@ -13,7 +13,8 @@ The aim is to provide a portable GUI library which will allows developers to cod
 - One goal is to make it as easy to use as Tkinter for Python.
 - Another goal is portability across platforms (Linux, Mac, Windows)
 - Another goal is to make it easy to distribute : The only dependency is Webview for Crystal. The app is simply one (binary executable) file.
-- The library uses Crystal, HTML, CSS and Webmin, but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
+- The library uses Crystal, HTML, CSS and Webmin, internally but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
+- The author expects to develop a fairly complete set of widgets to match the most commonly used HTML tags, once the initial tests are conclusive. 
   
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
@@ -58,6 +59,6 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [serge](https://github.com/your-github-user) - creator and maintainer
+- [Serge](https://github.com/your-github-user) - creator and maintainer
 
 # pico.cr is based on pico.css (https://picocss.com)

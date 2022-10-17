@@ -20,6 +20,7 @@ TITLE = "My new app"
 
 
 spawn do
+
     Kemal.config.port = (ENV["PORT"]? || PORT).to_i
     Kemal.config.host_binding = ENV["HOST_BINDING"]? || "#{IP}"
     #Kemal.config.env = "production"
