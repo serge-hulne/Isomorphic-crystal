@@ -22,6 +22,7 @@ GUI lib for Crystal-lang allowing for developing simple desktop apps using Cryst
 
 
 ## Front end 
+(in :src/gui/app_structure.cr)
 
 ```
 # ===========================
@@ -48,7 +49,8 @@ def root_frame (in : src/gui/app_structure.cr)
 end
 ```
 
-## Back end (snippet, see src/gui/app_actions.cr for a complete example)
+## Back end 
+(snippet, see src/gui/app_actions.cr for a complete example)
 
 ```
     post "/get_name" do |env|
