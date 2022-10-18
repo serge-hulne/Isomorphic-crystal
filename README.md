@@ -14,11 +14,14 @@ The aim is to provide a portable GUI library which will allows developers to cod
 - Another goal is portability across platforms (Linux, Mac, Windows)
 - Another goal is to make it easy to distribute : The only dependency is Webview for Crystal. The app is simply one (binary executable) file.
 - The library uses Crystal, HTML, CSS and Webmin, internally but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
-- The author expects to develop a fairly complete set of widgets to match the most commonly used HTML tags, once the initial tests are conclusive. 
+- The author expects to develop a fairly complete set of widgets, to match the most commonly used HTML tags, once the initial tests are conclusive. 
   
 GUI lib for Crystal-lang allowing for developing simple desktop apps using Crystal only. Zero dependencies.
 
 <img width="813" alt="Capture d’écran 2022-10-17 à 13 07 29" src="https://user-images.githubusercontent.com/303502/196162280-cf8f01bb-aea5-4265-8483-50e64bd936e4.png">
+
+
+## Front end 
 
 ```
 # ===========================
@@ -45,6 +48,20 @@ def root_frame
 end
 ```
 
+## Back end (snippet)
+
+```
+    post "/get_name" do |env|
+        # fetchn form data
+        x = env.params.body["fname"].as(String)
+        y = env.params.body["lname"].as(String)
+        # sending response to client
+        <<-HTML
+          #{root_frame} Data:<form>#{x}<br>#{y}</form>
+        HTML
+    end
+```
+
 ## Development
 
 TODO: Write development instructions here
@@ -61,4 +78,4 @@ TODO: Write development instructions here
 
 - [Serge](https://github.com/your-github-user) - creator and maintainer
 
-# pico.cr is based on pico.css (https://picocss.com)
+### pico.cr is based on pico.css (https://picocss.com)
