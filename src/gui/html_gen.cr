@@ -78,8 +78,8 @@ end
 
 class Paragraph < Node
     property content = ""
-    def initialize(content)
-        @content = "<article>#{content}</article>"
+    def initialize(text)
+        @content = "<article>#{text}</article>"
     end
     def to_s
         @content
@@ -143,6 +143,35 @@ class Hint < Node
             <div class="tooltip">Hover over me
                 <span class="tooltiptext">#{hint}</span>
             </div>
+        HTML
+    end
+    def to_s
+        @content
+    end
+end
+
+
+# ======================================================================
+#   Stadaalone, not for use inside a Form (see widgets for forms, above)
+# ======================================================================
+# 
+
+class MultiLineEntry < Node
+    def initialize() 
+        @content =  <<-HTML 
+            <textarea></textarea>
+        HTML
+    end
+    def to_s
+        @content
+    end
+end
+
+
+class LineEntry < Node
+    def initialize() 
+        @content =  <<-HTML 
+            <input>
         HTML
     end
     def to_s

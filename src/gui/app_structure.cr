@@ -16,7 +16,20 @@ def root_frame
     form = Form.new(entries, action)
 
     interface.append(form)
-    hint = Hint.new("This is a hint")
-    interface.append(hint)
+
+    # hint = Hint.new("This is a hint")
+    # interface.append(hint)
+    
+
+    # Paragraph containing an MultiLineEntry
+    # entry = MultiLineEntry.new()
+    # p = Paragraph.new(entry.content)
+
+
+    # Paragraph containing an LineEntry
+    entry = LineEntry.new()
+    p = Paragraph.new(entry.content)
+
+    interface.append(p)
     interface.render
 end
