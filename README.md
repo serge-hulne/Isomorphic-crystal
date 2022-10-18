@@ -28,7 +28,7 @@ GUI lib for Crystal-lang allowing for developing simple desktop apps using Cryst
 # Pages (Structure/interface)
 # ===========================
 
-def root_frame
+def root_frame (in : src/gui/app_structure.cr)
     interface = Gui::Frame.new(title:"My new app")
     interface.append(Div.new("This is a test"))
     
@@ -48,7 +48,7 @@ def root_frame
 end
 ```
 
-## Back end (snippet)
+## Back end (snippet, see src/gui/app_actions.cr for a complete example)
 
 ```
     post "/get_name" do |env|
